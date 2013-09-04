@@ -365,19 +365,27 @@ public class Server implements PasswordAuthenticator, PublickeyAuthenticator {
             if (home == null) {
                 throw new IOException("user home error");
             }
-            return new MyFileSystemView(userName);
+            return new MyFileSystemView(userName, home);
         }
     }
 
     static class MyFileSystemView extends NativeFileSystemView {
 
-        public MyFileSystemView(String userName) {
+        private String home;
+
+        public MyFileSystemView(String userName, String home) {
             super(userName);
+            this.home = home;
         }
-        
+
         @Override
         public String getPhysicalUserDir() {
-            return super.getPhysicalUserDir();
+            return home;
+        }
+
+        @Override
+        public String getVirtualUserDir() {
+            return home;
         }
     }
 }
