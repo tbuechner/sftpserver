@@ -5,9 +5,9 @@
 	<classpathentry kind="lib" path="lib/bcprov-jdk15-140.jar"/>
 	<classpathentry kind="lib" path="lib/ganymed-ssh2-build210.jar"/>
 	<classpathentry kind="lib" path="lib/jsch-0.1.42.jar"/>
-	<classpathentry kind="lib" path="lib/mina-core-2.0.5.jar"/>
-	<classpathentry kind="lib" path="lib/sshd-core-0.8.0.jar"/>
 	<classpathentry kind="lib" path="lib/tomcat-apr-5.5.23.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/mina-core-2.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/sshd-core-0.9.0.jar" sourcepath="C:/Users/buechner/.m2/repository/org/apache/sshd/sshd-core/0.9.0/sshd-core-0.9.0-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
