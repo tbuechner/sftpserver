@@ -1,11 +1,4 @@
 *.class
 bin
-lib
 .metadata
-sftpd.conf
-hostkey.*
 
-# Package Files #
-*.jar
-*.war
-*.ear
